@@ -18,34 +18,33 @@ A ChatGPT‑style web app built with Streamlit and OpenAI’s GPT API, featuring
 streamlit>=1.28
 openai>=0.27
 
-## Setup
-Clone the repo:
+# Setup
+ 1. #### Clone the repo:
 
 
-git clone <your-repo-url>
-cd <your-repo-folder>
-Install dependencies:
+git clone <https://github.com/tannu6918/AI-best-friend.git>
+
+ 2. #### Install dependencies:
 
 bash
-Copy
-Edit
-pip install -r requirements.txt
-Add your OpenAI key in .streamlit/secrets.toml:
+
+pip install -r streamlit
+
+3. #### Add your OpenAI key in .streamlit/secrets.toml:
 
 toml
-Copy
-Edit
 OPENAI_API_KEY = "sk-KEY"
-🧩 How It Works
-Session state initializes messages = []
 
-Each chat run:
+# How It Works
+1.Session state initializes messages = []
+
+2. Each chat run:
 
 Displays history with st.chat_message()
 
 Captures the user prompt via st.chat_input()
 
-Streaming response:
+3.Streaming response:
 
 Shows animated text from random.choice fallback
 
@@ -61,59 +60,18 @@ stream = openai.ChatCompletion.create(
 )
 response = st.write_stream(stream)
 st.session_state.messages.append({"role": "assistant", "content": response})
-Conversation persists between reruns 🎉
 
-Adapted from Streamlit's official “ChatGPT‑like clone” tutorial 
-reddit.com
-+10
-docs.streamlit.io
-+10
-github.com
-+10
-github.com
-+1
-github.com
-+1
-github.com
-github.com
-+11
-github.com
-+11
-reddit.com
-+11
-.
 
-🛠️ Running the App
+
+
+
+ # Running the App
 bash
 Copy
-Edit
+edit
 streamlit run your_app.py
-📝 Example README Template
-You can base your GitHub README on this layout:
 
-markdown
-Copy
-Edit
-# AI Best Friend
 
-## Features
-- Streaming chat UI
-- Emoji‑rich interaction
-- Switch between fun mode and GPT mode
 
-## Setup
-```bash
-pip install -r requirements.txt
-Usage
-Set your OpenAI key in .streamlit/secrets.toml
-
-Run streamlit run your_app.py
-
-Code Explained
-session_state holds chat history
-
-st.chat_input() for input
-
-Two modes: random-mock and OpenAI stream
 
 
