@@ -46,20 +46,10 @@ Captures the user prompt via st.chat_input()
 
 3.Streaming response:
 
+
 Shows animated text from random.choice fallback
 
-Or streams from OpenAI model:
 
-python
-Copy
-Edit
-stream = openai.ChatCompletion.create(
-  model="gpt-3.5-turbo",
-  messages=[...],
-  stream=True
-)
-response = st.write_stream(stream)
-st.session_state.messages.append({"role": "assistant", "content": response})
 
 
 
