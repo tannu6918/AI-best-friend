@@ -1,25 +1,24 @@
 # AI Best Friend
 
-## A ChatGPT‑style web app built with Streamlit and OpenAI’s GPT API, featuring a fun “AI Best Friend” interface.
+A ChatGPT‑style web app built with Streamlit and OpenAI’s GPT API, featuring a fun “AI Best Friend” interface.
 
 # Features
 1. Real-time streaming responses via st.write_stream()
 
-Chat history management using st.session_state
+2.Chat history management using st.session_state
 
-Easy-to-use UI leveraging st.chat_message() and st.chat_input()
+3.Easy-to-use UI leveraging st.chat_message() and st.chat_input()
 
-Supports both mock responses and actual OpenAI API calls
+4.Supports both mock responses and actual OpenAI API calls
 
-Simple cool design—emoji responses, typing effect animation
+5.Simple cool design—emoji responses, typing effect animation
 
-📋 #Requirements
-txt
-Copy
-Edit
+# Requirements
+
 streamlit>=1.28
 openai>=0.27
-🔧 Setup
+
+## Setup
 Clone the repo:
 
 bash
