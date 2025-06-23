@@ -21,9 +21,7 @@ openai>=0.27
 ## Setup
 Clone the repo:
 
-bash
-Copy
-Edit
+
 git clone <your-repo-url>
 cd <your-repo-folder>
 Install dependencies:
